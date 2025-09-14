@@ -2,8 +2,12 @@ package com.example.expensetracker.dto;
 
 
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.time.LocalDateTime;
 
+@Getter
 public class ApiErrorResponse {
     private LocalDateTime timestamp;
     private int status;
@@ -21,11 +25,6 @@ public class ApiErrorResponse {
 
     }
 
-    // getters
-    public LocalDateTime getTimestamp() { return timestamp; }
-    public int getStatus() { return status; }
-    public String getError() { return error; }
-    public String getMessage() { return message; }
-    public String getPath() { return path; }
+
 
 }
