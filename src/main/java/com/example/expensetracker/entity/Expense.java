@@ -14,12 +14,16 @@ public class Expense {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(unique = true)
     private String title;
 
+    @Column(unique = true)
     private Double amount;
 
+    @Column(unique = true)
     private String category;
 
+    @Column(unique = true)
     private LocalDate expenseDate;
 
     private LocalDateTime createdAt;
